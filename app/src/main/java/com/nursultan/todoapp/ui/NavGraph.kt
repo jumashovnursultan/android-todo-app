@@ -5,7 +5,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.nursultan.todoapp.ui.screens.LoginScreen
-import com.nursultan.todoapp.ui.screens.TodoScreen
 
 @Composable
 fun NavGraph() {
@@ -15,7 +14,7 @@ fun NavGraph() {
         navController = navController,
         startDestination = "login"
     ) {
-        composable("todo") {
+        composable("login") {
             LoginScreen()
         }
     }
